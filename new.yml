@@ -1,0 +1,14 @@
+name: Checkout
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my_checkout
+        uses: actions/checkout@v1
+      - name: List files
+        run: |
+          pwd
+          ls
